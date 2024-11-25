@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8sp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMahasiswa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#F2E6E6"
+            app:cardCornerRadius="15sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtItemJurusan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:layout_weight="1"
+                    android:text="Jurusan/Program Studi"
+                    android:textAlignment="center"
+                    android:textColor="#E97878"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtItemNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtItemNim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nim"
+                        android:textSize="14sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnEditItem"
+                    android:layout_width="26sp"
+                    android:layout_height="26sp"
+                    android:layout_margin="10sp"
+                    android:layout_marginTop="10sp"
+                    android:src="@drawable/baseline_delete_24" />
+
+                <ImageView
+                    android:id="@+id/btnDeleteItem"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="10sp"
+                    android:src="@drawable/baseline_edit_24" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
